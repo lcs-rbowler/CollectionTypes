@@ -27,8 +27,16 @@ for (index, value) in grades.enumerated() {
 /*:
  4. Determine and print the highest grade.
  */
+var highest = 60.0
 
+// Inspect each temperature one by one
+for grade in grades {
+    if grade > highest {
+        highest = grade
+    }
+}
 
+print("The highest grade is \(highest).")
 //: [Next](@next)
 
 
