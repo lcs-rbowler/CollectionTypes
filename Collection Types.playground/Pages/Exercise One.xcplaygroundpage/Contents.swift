@@ -20,7 +20,9 @@ for _ in 1...8 {
 /*:
  3. Print a list of each array index and the associated value.
  */
-print(grades)
+for (index, value) in grades.enumerated() {
+    print("At index \(index) the value is \(value)")
+}
 
 /*:
  4. Determine and print the highest grade.
